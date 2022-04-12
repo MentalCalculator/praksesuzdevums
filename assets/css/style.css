@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root{
+    --black: #000000;
+    --blue: #2F4858;
+    --dark_orange: #FFA800;
+    --light_orange: #FFCB66;
+    --white: #FFFFFF;
+}
+
+body{
+    margin: 0;
+    background-color: var(--white);
+}
+
+header{
+    height: 90px;
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+}
+
+header .logo{
+    padding-left: 60px;
+    margin-top: -5px;
+}
+
+header .navigation-list ul{
+    display: flex;
+    padding-right: 70px;
+    margin-top: 50px;
+    list-style: none;
+}
+
+header .navigation-list li{
+    font-size: 18px;
+    padding-left: 30px;
+    font-weight: 500;
+}
+
+header .navigation-list li a{
+    text-decoration: none;
+    color: var(--black);
+    transition: 0.5s color;
+}
+
+header .navigation-list li a:hover{
+    color: var(--dark_orange);
+}
+
+.line{
+    width: 100%;
+}
+
+.video-section{
+    position: relative;
+    margin-top: -80px;
+    z-index: -3;
+    width: 100%;
+}
+
+.video-section video{
+    width: 100%;
+    z-index: -1;
+}
+
+.video-section .play-button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    z-index: 2;
+}
+
+.video-section .play-button:hover{
+    height: 170px;
+}
+
+.info-section{
+    margin-top: 0px;
+}
+
+.info-section .info-section-text{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.info-section .line.second{
+    position: absolute;
+    margin-top: -2px;
+}
+
+.photo-section{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    position: relative;
+    z-index: -10;
+}
+
+.photo-section .photo.first, .photo.second{
+    width: 24.5%;
+}
+
+.photo-section .photo.fifth{
+    width: 29%;
+}
+
+.photo-section .photo-section-column{
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.photo-section .photo.third, .photo.fourth{
+    width: 100%;
+    background-size: cover;
+    margin-top: 0px;
+}
+
+.dream-section .line.third{
+    width: 100%;
+    position: absolute;
+    transform: rotate(180deg);
+    margin-top: -60px;
+}
+
+.dream-section .dream-boxes{
+    display: flex;
+    justify-content: space-around;
+    padding-left: auto;
+    padding-right: auto;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.dream-section .dream-boxes .dream-box h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Oswald';
+    font-size: 24px;
+    color: var(--blue);
+}
+
+.dream-section .dream-boxes .dream-box button{
+    width: 233px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 40px;
+    background-color: var(--dark_orange);
+    border: 0px;
+    border-radius: 40px;
+    font-size: 18px;
+    color: var(--white);
+    transition: 0.5s background-color;
+}
+
+.dream-section .dream-boxes .dream-box button:hover{
+    background-color: gold;
+}
+
+.form-section h2{
+    text-align: center;
+    font-family: 'Oswald';
+    font-size: 30px;
+    color: var(--blue);
+    text-transform: uppercase;
+}
+
+.form-section form{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    display: block;
+    border: 2px solid blue;
+    min-width: 600px;
+}
+
+.form-section form input, textarea{
+    background-color: rgba(229, 229, 229, 0.6);
+    border: 0px;
+    font-size: 18px;
+    color: var(--blue);
+    padding: 15px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-section form .name-field{
+    width: 47%;
+}
+
+.form-section form .email-field{
+    margin-left: 3%;
+    width: 49%;
+}
+
+
+
+

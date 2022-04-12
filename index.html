@@ -5,8 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="icon">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/theme.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Oswald:wght@500&display=swap" rel="stylesheet"> 
 </head>
 <body>
+
+    <header>
+        <div class="logo">
+        <img src="assets/img/BlackLogo 3.png" alt="logo" />
+        </div>
+        <div class="navigation-list">
+            <ul>
+                <li><a href="#">Ideja</a></li>
+                <li><a href="#">Piesaki Sapni</a></li>
+                <li><a href="#">Uzņēmējiem</li>
+                <li><a href="#">Sapņu banka</li>
+                <li><a href="#">Sapņus atbalsta</li>
+                <li><a href="#">99 Iedvesmas stāsti</li>
+                <li><a href="#">LV</a></li>
+            </ul>
+        </div>
+    </header>
+    <img src="assets/img/header_line.svg" class="line" />
+
+    <section class="video-section">
+        <img src="assets/img/Group 2.png" class="play-button" alt="Atskaņot" />
+        <video class="introduction-video">    
+            <source src="assets/img/BM_4OF99_Arta.mp4">
+            Jūsu pārlukprogramma neatbalsta šo video.
+        </video>
+    </section>
+
+    <section class="info-section">
+        <p class="info-section-text">SparkleHeart ir biedrība, kas radīta, lai palīdzētu cilvēkiem piepildīt pat pārdrošākos sapņus. Šeit satiekas sapņotāji un viņu atbalstītāji - uzņēmumi, kas sniedz palīdzīgu roku, lai kopā pasauli padarītu par labāku vietu mums visiem.Mēs esam gatavi palīdzēt Tev piepildīt sapni. Kā pamats iedvesmai - tiek radīti arī 99 stāsti par Latvijas sievietēm. </p>
+        <img src="assets/img/header_line.svg" class="line second" />
+    </section>
+
+    <section class="photo-section">
+        <img src="assets/img/Zanda_1.jpg" alt="Zanda" class="photo first" />
+        <img src="assets/img/Sibilla_4.jpg" alt="Sibilla" class="photo second" />
+        <div class = "photo-section-column">
+            <img src="assets/img/Brinuma_meita-15.jpg" alt="Brīnuma meita" class="photo third" />
+            <img src="assets/img/Alina_1 1.jpg" alt="Alīna" class="photo fourth" />
+        </div>
+        <img src="assets/img/Anda_2 1.jpg" alt="Anda" class="photo fifth" />
+    </section>
+
+    <section class="dream-section">
+        <img src="assets/img/header_line.svg" class="line third" />
+        <div class = "dream-boxes">
+        <div class="dream-box">
+            <h3>Vēlies piepildīt savu sapni?</h3>
+            <button type="button" onclick="window.location='#';">Sapņotājiem</button>
+        </div>
+        <div class="dream-box">
+            <h3>Vēlies palīdzēt kādam piepildīt sapni?</h3>
+            <button type="button" onclick="window.location='#';">Uzņēmējiem</button>
+        </div>
+        </div>
+    </section>
+
+    <section class="form-section">
+        <h2>Sazināties ar mums</h2>
+        <form>
+            <input id="name" type="text" placeholder="Vārds, Uzvārds*" class="name-field" />
+            <input id="email" type="email" placeholder="E-pasts*" class="email-field"/><br>
+            <input id="phone-number" type="text" placeholder="Telefons*" class="phone-field"/><br>
+            <textarea id="comment" placeholder="Jautājums vai komentāri*" class="comment-field"></textarea><br>
+            <p>* obligāti aizpildāmie lauki</p>
+            <input type="checkbox" id="accept">
+            <label for="accept">Piekrītu, ka mani dati tiks izmantoti likumdošanā noteiktā kārtībā un tiks saglabāti līdz brīdim, kamēr tas būs nepieciešams.</label>
+        </form>
+    </section>
     
 </body>
 </html>
