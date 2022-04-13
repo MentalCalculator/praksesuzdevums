@@ -22,19 +22,21 @@
             <ul>
                 <li><a href="#">Ideja</a></li>
                 <li><a href="#">Piesaki Sapni</a></li>
-                <li><a href="#">Uzņēmējiem</li>
-                <li><a href="#">Sapņu banka</li>
-                <li><a href="#">Sapņus atbalsta</li>
-                <li><a href="#">99 Iedvesmas stāsti</li>
+                <li><a href="#">Uzņēmējiem</a></li>
+                <li><a href="#">Sapņu banka</a></li>
+                <li><a href="#">Sapņus atbalsta</a></li>
+                <li><a href="#">99 Iedvesmas stāsti</a></li>
                 <li><a href="#">LV</a></li>
             </ul>
         </div>
+        <img src="assets/img/hamburger-button.png" alt="openMenu" id="hamburgerOpen" class="hamburger open" />
+        <img src="assets/img/hamburger-close-button.png" alt="closeMenu" id="hamburgerClose" class="hamburger close" /> 
     </header>
-    <img src="assets/img/header_line.svg" class="line" />
+    <img src="assets/img/header_line.svg" class="line" alt="Līnija" />
 
     <section class="video-section">
-        <img src="assets/img/Group 2.png" class="play-button" alt="Atskaņot" />
-        <video class="introduction-video">    
+        <img src="assets/img/Group 2.png" class="play-button" id="playButton" alt="Atskaņot" />
+        <video class="introduction-video" id="introductionVideo">    
             <source src="assets/img/BM_4OF99_Arta.mp4">
             Jūsu pārlukprogramma neatbalsta šo video.
         </video>
@@ -42,7 +44,7 @@
 
     <section class="info-section">
         <p class="info-section-text">SparkleHeart ir biedrība, kas radīta, lai palīdzētu cilvēkiem piepildīt pat pārdrošākos sapņus. Šeit satiekas sapņotāji un viņu atbalstītāji - uzņēmumi, kas sniedz palīdzīgu roku, lai kopā pasauli padarītu par labāku vietu mums visiem.Mēs esam gatavi palīdzēt Tev piepildīt sapni. Kā pamats iedvesmai - tiek radīti arī 99 stāsti par Latvijas sievietēm. </p>
-        <img src="assets/img/header_line.svg" class="line second" />
+        <img src="assets/img/header_line.svg" class="line second" alt="Līnija"/>
     </section>
 
     <section class="photo-section">
@@ -53,10 +55,10 @@
             <img src="assets/img/Alina_1 1.jpg" alt="Alīna" class="photo fourth" />
         </div>
         <img src="assets/img/Anda_2 1.jpg" alt="Anda" class="photo fifth" />
+        <img src="assets/img/header_line.svg" class="line third" alt="Līnija"/>
     </section>
 
     <section class="dream-section">
-        <img src="assets/img/header_line.svg" class="line third" />
         <div class = "dream-boxes">
         <div class="dream-box">
             <h3>Vēlies piepildīt savu sapni?</h3>
@@ -72,15 +74,74 @@
     <section class="form-section">
         <h2>Sazināties ar mums</h2>
         <form>
-            <input id="name" type="text" placeholder="Vārds, Uzvārds*" class="name-field" />
-            <input id="email" type="email" placeholder="E-pasts*" class="email-field"/><br>
-            <input id="phone-number" type="text" placeholder="Telefons*" class="phone-field"/><br>
-            <textarea id="comment" placeholder="Jautājums vai komentāri*" class="comment-field"></textarea><br>
+            <input id="name" type="text" placeholder="Vārds, Uzvārds*" class="name-field" required/>
+            <input id="email" type="email" placeholder="E-pasts*" class="email-field" required/><br>
+            <input id="phone-number" type="text" placeholder="Telefons*" class="phone-field" required/><br>
+            <textarea id="comment" placeholder="Jautājums vai komentāri*" class="comment-field" required></textarea><br>
             <p>* obligāti aizpildāmie lauki</p>
-            <input type="checkbox" id="accept">
-            <label for="accept">Piekrītu, ka mani dati tiks izmantoti likumdošanā noteiktā kārtībā un tiks saglabāti līdz brīdim, kamēr tas būs nepieciešams.</label>
+            <div class="accept-box">
+                <input type="checkbox" id="accept" class="accept-checkbox">
+                <label for="accept" class="accept-text">Piekrītu, ka mani dati tiks izmantoti likumdošanā noteiktā kārtībā un tiks saglabāti līdz brīdim, kamēr tas būs nepieciešams.</label>
+            </div>
+            <button type="button" onclick="window.location='#';" class="send-button">Sūtīt</button>
         </form>
+        <img src="assets/img/header_line.svg" class="line fourth" alt="Līnija"/>
     </section>
+
+    <section class="supporters-section">
+        <h2>Atbalstītāji</h2>
+        <div class="supporters-box">
+            <img src="assets/img/getlogo 1.png" alt="Teikums" class="supporter-logo" />
+            <img src="assets/img/sem_logo-2 1.png" alt="SEM" class="supporter-logo" />
+            <img src="assets/img/Citybee-logo 1.png" alt="Citybee" class="supporter-logo" />
+            <img src="assets/img/logo1 1.png" alt="Linearis" class="supporter-logo" />
+        </div>
+        <img src="assets/img/header_line.png" class="line fifth" alt="Līnija"/>
+    </section>
+
+    <footer>
+        <div class="footer-line-1">
+            <div class="first-box">
+                <img src="assets/img/GoldenV2Logo 3.png" alt="Sparkle Heart" class="footer-logo" />
+            </div>
+            <div class="second-box">
+                <ul>
+                    <li><a href="#">Ideja</a></li>
+                    <li><a href="#">Piesaki Sapni</a></li>
+                    <li><a href="#">Uzņēmējiem</a></li>
+                    <li><a href="#">Sapņu banka</a></li>
+                    <li><a href="#">Sapņus atbalsta</a></li>
+                    <li><a href="#">Iedvesmas stāsti</a></li>
+                </ul>
+            </div>
+            <div class="third-box">
+                <p class="heading">Biedrība SparkleHeart</p>
+                <p>Reģistrācijas nr. 40008293119</p>
+                <p>Banka: SWEDBANK A/S</p>
+                <p>LV52HABA0551047652465</p>
+            </div>
+            <div class="fourth-box">
+                <p class="heading">Juris Gogulis</p>
+                <p>juris.gogulis@sparkleheart.org</p>
+                <p>+37126890034</p>
+                <p>Biķernieku iela 24a - 5, LV-1006</p>
+                <div class="social-box">
+                    <a href="https://www.facebook.com"><img src="assets/img/facebook-logo.png" alt="Facebook" class="social-logo" /></a>
+                    <a href="https://www.instagram.com"><img src="assets/img/instagram-logo.png" alt="Instagram" class="social-logo"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-line-2">
+            <div class="first-box">
+                <p>	&copy; SparkleHeart 2020.</p>
+                <p>Visas tiesības aizsargātas.</p>
+            </div>
+            <div class="second-box">
+                <a href="#">Privātuma politika</a>
+            </div>
+        </div>
+    </footer>
+
     
 </body>
 </html>

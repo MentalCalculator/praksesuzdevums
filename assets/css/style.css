@@ -51,6 +51,18 @@ header .navigation-list li a:hover{
     color: var(--dark_orange);
 }
 
+header .hamburger{
+    height: 22px;
+}
+
+header .hamburger.open{
+    display: none;
+}
+
+header .hamburger.close{
+    display: none;
+}
+
 .line{
     width: 100%;
 }
@@ -120,6 +132,7 @@ header .navigation-list li a:hover{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .photo-section .photo.third, .photo.fourth{
@@ -128,11 +141,11 @@ header .navigation-list li a:hover{
     margin-top: 0px;
 }
 
-.dream-section .line.third{
+.photo-section .line.third{
     width: 100%;
     position: absolute;
     transform: rotate(180deg);
-    margin-top: -60px;
+    bottom: -10px;
 }
 
 .dream-section .dream-boxes{
@@ -182,14 +195,14 @@ header .navigation-list li a:hover{
 .form-section form{
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    margin-bottom: 180px;
+    width: 33%;
     display: block;
-    border: 2px solid blue;
     min-width: 600px;
 }
 
 .form-section form input, textarea{
-    background-color: rgba(229, 229, 229, 0.6);
+    background-color: rgba(47, 72, 88, 0.15);
     border: 0px;
     font-size: 18px;
     color: var(--blue);
@@ -197,6 +210,7 @@ header .navigation-list li a:hover{
     border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
+    font-weight: 500;
 }
 
 .form-section form .name-field{
@@ -208,6 +222,165 @@ header .navigation-list li a:hover{
     width: 49%;
 }
 
+.form-section form .phone-field{
+    margin-top: 15px;
+    width: 100%;
+}
 
+.form-section form textarea{
+    margin-top: 15px;
+    width: 100%;
+    height: 200px;
+    resize: none;
+}
 
+.form-section form .accept-box{
+    display: flex;
+}
+
+.form-section form .accept-box .accept-checkbox{
+    accent-color: var(--dark_orange);
+}
+
+.form-section form .accept-box .accept-text{
+    margin-left: 10px;
+}
+
+.form-section form .send-button{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    font-size: 24px;
+    width: 182px;
+    height: 62px;
+    background-color: var(--dark_orange);
+    color: white;
+    display: block;
+    border-radius: 40px;
+    border: 0px;
+    transition: 0.5s background-color;
+}
+
+.form-section form .send-button:hover{
+    background-color: gold;
+}
+
+.form-section .line.fourth{
+    position: absolute;
+    margin-top: -2px;
+}
+
+.supporters-section{
+    background-color: var(--light_orange);
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+
+.supporters-section h2{
+    text-align: center;
+    font-family: 'Oswald';
+    text-transform: uppercase;
+    color: var(--blue);
+}
+
+.supporters-section .supporters-box{
+    width: 55%;
+    min-width: 900px;
+    max-width: 1056px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.supporters-section .line.fifth{
+    position: absolute;
+    margin-top: 150px;
+    filter: brightness(0) saturate(100%) invert(82%) sepia(100%) saturate(4547%) hue-rotate(310deg) brightness(104%) contrast(103%);
+}
+
+footer{
+    background-color: var(--blue);
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+footer .footer-line-1{
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 50%;
+    max-width: 90%;
+    max-width: 1280px;
+    font-weight: 500;
+    color: var(--white);
+}
+
+footer .footer-line-1 .second-box ul{
+    list-style-type: none;
+}
+
+footer .footer-line-1 .second-box ul li{
+    padding-top: 20px;
+}
+
+footer .footer-line-1 .second-box ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+
+footer .footer-line-1 .third-box .heading{
+    font-size: 24px;
+}
+
+footer .footer-line-1 .third-box p{
+    font-size: 18px;
+}
+
+footer .footer-line-1 .fourth-box{
+    text-align: right;
+}
+
+footer .footer-line-1 .fourth-box .heading{
+    font-size: 24px;
+}
+
+footer .footer-line-1 .fourth-box p{
+    font-size: 18px;
+}
+
+footer .footer-line-1 .fourth-box .social-box{
+    margin-top: 50px;
+}
+
+footer .footer-line-1 .fourth-box .social-box a:first-of-type{
+    margin-right: 30px;
+}
+
+footer .footer-line-2{
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-end;
+    min-width: 50%;
+    max-width: 90%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-weight: 500;
+    max-width: 1280px;
+}
+
+footer .footer-line-2 .first-box p{
+    margin-top: -10px;
+}
+
+footer .footer-line-2 .second-box a{
+    text-decoration: none;
+    color: white;
+}
 
