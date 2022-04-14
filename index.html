@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="icon">
     <link rel="stylesheet" href="assets/css/style.css" />
-    <script src="assets/js/theme.js"></script>
+    <!--<script src="assets/js/theme.js"></script>-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Oswald:wght@500&display=swap" rel="stylesheet"> 
@@ -18,29 +18,43 @@
         <div class="logo">
         <img src="assets/img/BlackLogo 3.png" alt="logo" />
         </div>
-        <div class="navigation-list">
+        <img src="assets/img/hamburger-button.png" alt="openMenu" id="hamburgerOpen" class="hamburger open" />
+        <img src="assets/img/hamburger-close-button.png" alt="closeMenu" id="hamburgerClose" class="hamburger close" /> 
+        <div class="navigation-list" id="navigationList">
+            <div class="language-mobile">
+                <ul>
+                    <li><a href="#" class="active">LV</a></li>
+                    <li><a href="#">EN</a></li>
+                    <li><a href="#">RU</a></li>
+                </ul>
+            </div>
+            <div class="list">
             <ul>
                 <li><a href="#">Ideja</a></li>
-                <li><a href="#">Piesaki Sapni</a></li>
+                <li><a href="#" class="active">Piesaki Sapni</a></li>
                 <li><a href="#">Uzņēmējiem</a></li>
                 <li><a href="#">Sapņu banka</a></li>
                 <li><a href="#">Sapņus atbalsta</a></li>
                 <li><a href="#">99 Iedvesmas stāsti</a></li>
-                <li><a href="#">LV</a></li>
+                <li class="dropdown"><a href="#">LV</a>
+                    <ul>
+                        <li><a href="#">EN</a></li>
+                        <li><a href="#">RU</a></li>
+                    </ul>
+                </li>
             </ul>
+            </div>
         </div>
-        <img src="assets/img/hamburger-button.png" alt="openMenu" id="hamburgerOpen" class="hamburger open" />
-        <img src="assets/img/hamburger-close-button.png" alt="closeMenu" id="hamburgerClose" class="hamburger close" /> 
     </header>
     <img src="assets/img/header_line.svg" class="line" alt="Līnija" />
 
-    <section class="video-section">
+    <div class="video-section" onclick="playVideo()">
         <img src="assets/img/Group 2.png" class="play-button" id="playButton" alt="Atskaņot" />
         <video class="introduction-video" id="introductionVideo">    
             <source src="assets/img/BM_4OF99_Arta.mp4">
             Jūsu pārlukprogramma neatbalsta šo video.
         </video>
-    </section>
+    </div>
 
     <section class="info-section">
         <p class="info-section-text">SparkleHeart ir biedrība, kas radīta, lai palīdzētu cilvēkiem piepildīt pat pārdrošākos sapņus. Šeit satiekas sapņotāji un viņu atbalstītāji - uzņēmumi, kas sniedz palīdzīgu roku, lai kopā pasauli padarītu par labāku vietu mums visiem.Mēs esam gatavi palīdzēt Tev piepildīt sapni. Kā pamats iedvesmai - tiek radīti arī 99 stāsti par Latvijas sievietēm. </p>
@@ -94,7 +108,7 @@
             <img src="assets/img/getlogo 1.png" alt="Teikums" class="supporter-logo" />
             <img src="assets/img/sem_logo-2 1.png" alt="SEM" class="supporter-logo" />
             <img src="assets/img/Citybee-logo 1.png" alt="Citybee" class="supporter-logo" />
-            <img src="assets/img/logo1 1.png" alt="Linearis" class="supporter-logo" />
+            <img src="assets/img/linearis.png" alt="Linearis" class="supporter-logo fourth" />
         </div>
         <img src="assets/img/header_line.png" class="line fifth" alt="Līnija"/>
     </section>
@@ -142,6 +156,6 @@
         </div>
     </footer>
 
-    
+    <script src="assets/js/theme.js"></script>
 </body>
 </html>
