@@ -27,14 +27,14 @@ header{
 }
 
 header .logo{
-    padding-left: 60px;
+    margin-left: 60px;
     margin-top: -5px;
 }
 
 header .navigation-list ul{
     display: flex;
     padding-right: 70px;
-    margin-top: 50px;
+    margin-top: 40px;
     list-style: none;
 }
 
@@ -205,6 +205,9 @@ header .hamburger.close{
     padding-right: auto;
     padding-top: 150px;
     padding-bottom: 150px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .dream-section .dream-boxes .dream-box h3{
@@ -246,6 +249,7 @@ header .hamburger.close{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 180px;
+    margin-top: 60px;
     width: 50%;
     display: block;
 }
@@ -338,6 +342,7 @@ header .hamburger.close{
     max-width: 1056px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -412,6 +417,16 @@ footer .footer-line-1 .fourth-box p{
     font-size: 18px;
 }
 
+footer .footer-line-1 .fourth-box .show-bank-details{
+    display: none;
+    font-weight: bold;
+}
+
+footer .footer-line-1 .fourth-box .show-bank-details a{
+    text-decoration: none;
+    color: white;
+}
+
 footer .footer-line-1 .fourth-box .social-box{
     margin-top: 50px;
 }
@@ -423,7 +438,7 @@ footer .footer-line-1 .fourth-box .social-box a:first-of-type{
 footer .footer-line-2{
     display: flex;
     justify-content: space-between;
-    align-items:flex-end;
+    align-items: flex-end;
     min-width: 50%;
     max-width: 90%;
     max-width: 1280px;
@@ -449,13 +464,24 @@ footer .footer-line-2 .second-box a{
 }
 
 @media (max-width: 959px){
+    header{
+        height: 70px;
+    }
+
+    header .logo{
+        margin-left: 80px;
+    }
+
+    header .logo img{
+        height: 70px;
+    }
 
     header .navigation-list{
         position: fixed;
         display: none;  
         background-color: var(--white);
         text-align: center;
-        margin-top: 90px;
+        margin-top: 70px;
         width: 100%;
         height: 94vh;
     }
@@ -482,7 +508,7 @@ footer .footer-line-2 .second-box a{
     }
 
     header .navigation-list ul li{
-        font-size: 30px;
+        font-size: 24px;
         padding-top: 60px;
     }
 
@@ -492,30 +518,36 @@ footer .footer-line-2 .second-box a{
 
     header .navigation-list li a.active{
         border-bottom: 4px solid var(--dark_orange);
+        font-weight: bold;
     }
 
     header .hamburger.open{
         display: block;
         position: absolute;
-        right: 60px;
-        top: 40px;
+        right: 80px;
+        top: 25px;
     }
 
     header .hamburger.close{
         display: none;
         position: absolute;
-        right: 60px;
-        top: 40px;
+        right: 80px;
+        top: 25px;
     }
 
     .info-section .info-section-text{
         width: 75%;
     }
 
+    .dream-section .dream-boxes{
+        width: 100%;
+    }
+
     .supporters-section .supporters-box{
         justify-content: space-evenly;
         flex-wrap: wrap;
         width: 90%;
+        margin-top: 20px;
     }
 
     .supporters-section .supporters-box .supporter-logo{
@@ -531,17 +563,168 @@ footer .footer-line-2 .second-box a{
     }
 
     footer{
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 80px;
+        padding-right: 80px;
     }
 
     footer .footer-line-1 .second-box, .third-box{
         display: none;
     }
+
+    footer .footer-line-1 .fourth-box .show-bank-details{
+        display: block;
+    }
+
+    footer .footer-line-2{
+        margin-top: 40px;
+    }
+
+    footer .footer-line-2 .first-box p{
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    footer .footer-line-2 .second-box{
+        text-align: right;
+    }
 }
 
 @media (max-width: 539px){
-    
+    header{
+        height: 70px;
+    }
+
+    header .logo{
+        margin-left: 20px;
+    }
+
+    header .logo img{
+        height: 60px;
+    }
+
+    header .navigation-list li{
+        font-size: 18px;
+    }
+
+    header .navigation-list .language-mobile ul li:nth-of-type(2){
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    header .navigation-list ul{
+        margin-top: 10px;
+    }
+
+    header .navigation-list ul li{
+        font-size: 24px;
+        padding-top: 40px;
+    }
+
+    header .hamburger.open{
+        right: 40px;
+        top: 25px;
+    }
+
+    header .hamburger.close{
+        right: 40px;
+        top: 25px;
+    }
+
+    .video-section{
+        margin-top: -20px;
+    }
+
+    .info-section .info-section-text{
+        width: 90%;
+    }
+
+    .photo-section{
+        flex-wrap: wrap-reverse;
+    }
+
+    .photo-section .photo.first{
+        width: 50%;
+    }
+
+    .photo-section .photo.second{
+        width: 50%;
+    }
+
+    .photo-section .photo-section-column{
+        width: 45%;
+    }
+
+    .photo-section .photo.fifth{
+        width: 55%;
+    }
+
+    .dream-section .dream-boxes{
+        flex-direction: column;
+    }
+
+    .dream-section .dream-boxes .dream-box:last-of-type{
+        margin-top: 50px;
+    }
+
+    .form-section form .name-field{
+        width: 100%;
+    }
+
+    .form-section form .email-field{
+        width: 100%;
+        margin-left: 0%;
+        margin-top: 15px;
+    }
+
+    .supporters-section .supporters-box{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .supporters-section .supporters-box .supporter-logo{
+        width: 45%;
+    }
+
+    footer{
+        padding-left: 30px;
+        padding-right: 20px;
+    }
+
+    footer .footer-line-1{
+        flex-direction: column;
+    }
+
+    footer .footer-line-1 .first-box img{
+        height: 120px;
+    }
+
+    footer .footer-line-1 .fourth-box{
+        text-align: left;
+    }
+
+    footer .footer-line-1 .fourth-box .heading{
+        margin-bottom: 40px;
+    }
+
+    footer .footer-line-1 .fourth-box p{
+        font-size: 15px;
+    }
+
+    footer .footer-line-2{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 40px;
+        font-size: 12px;
+    }
+
+    footer .footer-line-2 .first-box{
+        text-align: left;
+    }
+
+    footer .footer-line-2 .second-box{
+        text-align: left;
+    }
+
 }
 
 

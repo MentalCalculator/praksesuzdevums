@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="icon">
+    <title>Sparkle Heart</title>
+    <link rel="icon" href="assets/img/Intersect.png" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <!--<script src="assets/js/theme.js"></script>-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Oswald:wght@500&display=swap" rel="stylesheet"> 
 </head>
-<body>
+<body onresize="resizeScreen()">
 
     <header>
         <div class="logo">
@@ -94,10 +94,10 @@
             <textarea id="comment" placeholder="Jautājums vai komentāri*" class="comment-field" required></textarea><br>
             <p>* obligāti aizpildāmie lauki</p>
             <div class="accept-box">
-                <input type="checkbox" id="accept" class="accept-checkbox">
+                <input type="checkbox" id="accept" class="accept-checkbox" required>
                 <label for="accept" class="accept-text">Piekrītu, ka mani dati tiks izmantoti likumdošanā noteiktā kārtībā un tiks saglabāti līdz brīdim, kamēr tas būs nepieciešams.</label>
             </div>
-            <button type="button" onclick="window.location='#';" class="send-button">Sūtīt</button>
+            <button type="submit" onclick="window.location='#';" class="send-button">Sūtīt</button>
         </form>
         <img src="assets/img/header_line.svg" class="line fourth" alt="Līnija"/>
     </section>
@@ -139,6 +139,7 @@
                 <p>juris.gogulis@sparkleheart.org</p>
                 <p>+37126890034</p>
                 <p>Biķernieku iela 24a - 5, LV-1006</p>
+                <p class = "show-bank-details"><a href = "#">Skatīt rekvizītus</a></p>
                 <div class="social-box">
                     <a href="https://www.facebook.com"><img src="assets/img/facebook-logo.png" alt="Facebook" class="social-logo" /></a>
                     <a href="https://www.instagram.com"><img src="assets/img/instagram-logo.png" alt="Instagram" class="social-logo"></a>

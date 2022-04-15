@@ -1,9 +1,8 @@
 let introductionVideo = document.getElementById("introductionVideo");
 let playButton = document.getElementById("playButton");
-let videoSection = document.getElementsByClassName("video-section")[0];
 let playingVideo = 0;
 
-videoSection.addEventListener("click", playVideo);
+introductionVideo.addEventListener("onclick", playVideo);
 
 function playVideo () {
     if(playingVideo == 0){
@@ -18,30 +17,46 @@ function playVideo () {
     }
 }
 
-
+console.log(introductionVideo);
 
   
 
-let dropdownOpenButton = document.getElementById("hamburgerOpen");
-let dropdownCloseButton = document.getElementById("hamburgerClose");
+let menuOpenButton = document.getElementById("hamburgerOpen");
+let menuCloseButton = document.getElementById("hamburgerClose");
 let navigationList = document.getElementsByClassName("navigation-list")[0];
+let openedMenu = 0;
 
-
-dropdownOpenButton.addEventListener("click", openMenu);
+menuOpenButton.addEventListener("click", openMenu);
 
 function openMenu () {
     navigationList.classList.add("opened");
-    dropdownOpenButton.style.display = "none";
-    dropdownCloseButton.style.display = "block";
+    menuOpenButton.style.display = "none";
+    menuCloseButton.style.display = "block";
+    openedMenu++;
 }
 
-dropdownCloseButton.addEventListener("click", closeMenu);
+menuCloseButton.addEventListener("click", closeMenu);
 
 function closeMenu () {
     navigationList.classList.remove("opened");
-    dropdownOpenButton.style.display = "block";
-    dropdownCloseButton.style.display = "none";
+    menuOpenButton.style.display = "block";
+    menuCloseButton.style.display = "none";
+    openedMenu -= 1;
 }
 
+function resizeScreen () {
+    let width = window.innerWidth;
 
+    if(width >= 960){
+        menuOpenButton.style.display = "none";
+        menuCloseButton.style.display = "none";
+        navigationList.classList.remove("opened");
+        openedMenu = 0;
+    }
+    else if(width < 960){
+        if(openedMenu == 0){
+            menuOpenButton.style.display = "block";
+        }
+    }
+}
 
